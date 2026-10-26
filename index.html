@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ec" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <meta
+      name="description"
+      content="Saif Ali's front-end learning portfolio — HTML, CSS, JavaScript, and a first step into React."
+    />
+    <title>Saif Ali | Front-End Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Saif Ali, home">
+        <img class="brand-mark" src="logo.png" alt="" aria-hidden="true" width="48" height="48" />
+        <span class="brand-copy">
+          <span class="brand-name">Saif Ali</span>
+          <span class="brand-note">FRONT-END JOURNEY</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#practice">Practice</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false" title="Toggle color theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Light mode</span>
+        </button>
+        <a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> PERSONAL PORTFOLIO <span class="eyebrow-slash">/</span> 2026</p>
+          <h1 id="hero-title">Curious mind.<br /><em>Code in progress.</em></h1>
+          <p class="hero-description">
+            I’m learning how to turn clear ideas into thoughtful web pages — starting with
+            HTML, CSS and JavaScript, and taking my first steps into React.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#practice">Explore my practice <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote">
+            <span><span class="status-dot"></span> Currently learning React</span>
+            <span>Built with HTML · CSS · JavaScript</span>
+          </div>
+        </div>
+
+        <figure class="portrait-card">
+          <div class="portrait-topline">
+            <span>FIELD NOTE</span>
+            <span>NO. 01</span>
+          </div>
+          <div class="portrait-image-wrap">
+            <img
+              src="Photo.jpeg"
+              alt="Portrait of Saif Ali wearing a light blue suit"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption>
+            <span class="portrait-name">Saif Ali</span>
+            <span class="portrait-caption">Learning by making, one page at a time.</span>
+          </figcaption>
+          <span class="portrait-stamp" aria-hidden="true">STAY<br />CURIOUS<br /><b>↗</b></span>
+        </figure>
+
+        <div class="hero-index" aria-hidden="true">01 <span>—</span> START HERE</div>
+      </section>
+
+      <div class="ticker" aria-label="A reminder that learning takes practice">
+        <div class="ticker-track" aria-hidden="true">
+          <span>LEARN IT</span><b>✳</b><span>TRY IT</span><b>✳</b><span>MAKE IT BETTER</span><b>✳</b>
+          <span>LEARN IT</span><b>✳</b><span>TRY IT</span><b>✳</b><span>MAKE IT BETTER</span><b>✳</b>
+        </div>
+      </div>
+
+      <section class="about-section page-wrap section-space" id="about" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span><span>ABOUT ME</span></div>
+        <div class="about-main">
+          <h2 id="about-title">A little patience.<br /><em>A lot of curiosity.</em></h2>
+          <div class="about-copy">
+            <p>
+              I’m Saif, a beginner front-end learner who likes seeing a blank page become
+              something real. I know the basics of HTML, CSS and JavaScript, and I’ve recently
+              started learning React.
+            </p>
+            <p>
+              I’m building my foundation one small practice task at a time. This portfolio is
+              part introduction, part progress log — a place to show what I’m learning honestly
+              as I go.
+            </p>
+          </div>
+        </div>
+        <div class="approach-row" aria-label="My learning approach">
+          <article class="approach-item">
+            <span class="approach-number">01 /</span>
+            <h3>Start with structure</h3>
+            <p>Use HTML to make a page clear before making it look finished.</p>
+          </article>
+          <article class="approach-item">
+            <span class="approach-number">02 /</span>
+            <h3>Make room to explore</h3>
+            <p>Use CSS to practise layout, spacing, colour and small-screen design.</p>
+          </article>
+          <article class="approach-item">
+            <span class="approach-number">03 /</span>
+            <h3>Add a little life</h3>
+            <p>Use JavaScript for simple interactions that have a clear purpose.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="page-wrap skills-layout">
+          <div class="skills-intro">
+            <div class="section-label section-label-light"><span>02</span><span>MY TOOLKIT</span></div>
+            <h2 id="skills-title">Learning the<br /><em>building blocks.</em></h2>
+            <p>My current self-ratings — a snapshot of where I am today, not a finish line.</p>
+            <div class="react-note">
+              <span class="react-note-mark" aria-hidden="true">R</span>
+              <div>
+                <span class="react-kicker">NEW CHAPTER</span>
+                <strong>React</strong>
+                <p>Beginner · currently learning</p>
+              </div>
+              <span class="react-arrow" aria-hidden="true">↗</span>
+            </div>
+          </div>
+
+          <div class="skill-list" aria-label="Self-assessed skills">
+            <!-- To update a skill, change its percentage here and in the aria-valuenow value. -->
+            <div class="skill-row">
+              <div class="skill-heading">
+                <div><span class="skill-name">HTML</span><span class="skill-level">Page structure</span></div>
+                <strong>75<span>%</span></strong>
+              </div>
+              <div class="skill-track" role="meter" aria-label="HTML self-rating" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+                <span class="skill-fill" style="--skill: 75%"></span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-heading">
+                <div><span class="skill-name">CSS</span><span class="skill-level">Layout &amp; style</span></div>
+                <strong>60<span>%</span></strong>
+              </div>
+              <div class="skill-track" role="meter" aria-label="CSS self-rating" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                <span class="skill-fill skill-fill-mint" style="--skill: 60%"></span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-heading">
+                <div><span class="skill-name">JavaScript</span><span class="skill-level">Logic &amp; interaction</span></div>
+                <strong>40<span>%</span></strong>
+              </div>
+              <div class="skill-track" role="meter" aria-label="JavaScript self-rating" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                <span class="skill-fill skill-fill-orange" style="--skill: 40%"></span>
+              </div>
+            </div>
+            <p class="skill-footnote">Self-assessed starting points · percentages are easy to edit in <code>index.html</code>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice-section page-wrap section-space" id="practice" aria-labelledby="practice-title">
+        <div class="practice-heading">
+          <div>
+            <div class="section-label"><span>03</span><span>ASSIGNMENTS</span></div>
+            <h2 id="practice-title">Things I’ve <em>made.</em></h2>
+          </div>
+          <p>A collection of my practice projects. Open an assignment page or visit its GitHub repository.</p>
+        </div>
+
+        <div class="assignment-grid">
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 01</span><span aria-hidden="true">01</span></div>
+            <p class="assignment-topic">FORM · UI</p>
+            <h3>Signup Page</h3>
+            <p class="assignment-description">A sign-up page interface practice build.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/signup-page/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/signup-page" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 02</span><span aria-hidden="true">02</span></div>
+            <p class="assignment-topic">QUIZ · INTERACTION</p>
+            <h3>Quiz</h3>
+            <p class="assignment-description">A quiz project from my front-end practice.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Quiz/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Quiz" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 03</span><span aria-hidden="true">03</span></div>
+            <p class="assignment-topic">TIME · JAVASCRIPT</p>
+            <h3>Stopwatch</h3>
+            <p class="assignment-description">A stopwatch project for practising timed interactions.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Stopwatch/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Stopwatch" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 04</span><span aria-hidden="true">04</span></div>
+            <p class="assignment-topic">CALCULATOR · LOGIC</p>
+            <h3>Calculator</h3>
+            <p class="assignment-description">A calculator interface and number-input practice build.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Calculator/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Calculator" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 05</span><span aria-hidden="true">05</span></div>
+            <p class="assignment-topic">CRICKET · CARDS</p>
+            <h3>Cricket Series Cards</h3>
+            <p class="assignment-description">A cricket-series assignment presented as a set of cards.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Cricket-Series-cards/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Cricket-Series-Cards" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 06</span><span aria-hidden="true">06</span></div>
+            <p class="assignment-topic">IMAGES · GALLERY</p>
+            <h3>Image Gallery</h3>
+            <p class="assignment-description">An image-gallery assignment focused on displaying pictures.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Image-gallery/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Image-Gallery" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 07</span><span aria-hidden="true">07</span></div>
+            <p class="assignment-topic">API · DATA</p>
+            <h3>API Integration</h3>
+            <p class="assignment-description">A project exploring API-connected page content.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Api-integration/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Api-integration" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+          <article class="assignment-card">
+            <div class="assignment-top"><span>PROJECT 08</span><span aria-hidden="true">08</span></div>
+            <p class="assignment-topic">TASKS · TODO</p>
+            <h3>Todo List</h3>
+            <p class="assignment-description">A task-list project for organising todo items.</p>
+            <div class="assignment-actions">
+              <a class="assignment-demo" href="https://mushtaq25456-sudo.github.io/Todo-list/" target="_blank" rel="noreferrer">Open assignment <span aria-hidden="true">↗</span></a>
+              <a class="assignment-source" href="https://github.com/mushtaq25456-sudo/Todo-list" target="_blank" rel="noreferrer">Source code</a>
+            </div>
+          </article>
+        </div>
+        <p class="practice-note"><span aria-hidden="true">✳</span> Each assignment is part of my learning journey.</p>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="page-wrap contact-layout">
+          <div class="contact-copy">
+            <div class="section-label section-label-light"><span>04</span><span>GET IN TOUCH</span></div>
+            <h2 id="contact-title">Good things<br />start with <em>hello.</em></h2>
+            <p>Want to talk about an idea, a project, or learning to build for the web? Send me a message.</p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:mushtaq25456@gmail.com">
+              <span class="contact-link-label">EMAIL</span>
+              <span class="contact-link-value">mushtaq25456@gmail.com</span>
+              <span class="contact-link-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-link" href="tel:+923173793107">
+              <span class="contact-link-label">PHONE</span>
+              <span class="contact-link-value">03173793107</span>
+              <span class="contact-link-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/saifali-khan-797090395/" target="_blank" rel="noreferrer" title="Saif Ali's supplied LinkedIn profile">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/mushtaq25456-sudo" target="_blank" rel="noreferrer" title="Verified GitHub profile for saifali khan">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="social-note">Find my work and connect with me online.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-wrap">
+      <a class="footer-brand" href="#home">SA<span> / </span>Saif Ali</a>
+      <p>Made while learning. © <span id="current-year">2026</span> Saif Ali</p>
+      <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
